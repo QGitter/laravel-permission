@@ -16,7 +16,6 @@ class MenuComposer
         $sourceMenus = array_map('get_object_vars',$this->getMenusData());
         $targerMenus = $this->getMenusTreeData($sourceMenus);
         $menus = $this->createMenusView($targerMenus);
-
         $view->with([
             'menuslist'=>$menus,
             'buttons'=>$this->getButtonByUrl(),
@@ -147,7 +146,6 @@ class MenuComposer
                 ->where('admin_map_role.uid',Session::get('userinfo.id'))
                 ->select('role.pid')
                 ->first();
-
         return isset($roleGroupInfo->pid) && $roleGroupInfo->pid == 0 ? true : false;
     }
 

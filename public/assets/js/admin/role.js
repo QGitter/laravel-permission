@@ -58,7 +58,7 @@ function confirmAddRole() {
     var data={};
     var menustr = "";
 
-    if( rolegroup =="" || rolegroup == 0){
+    if( rolegroup =="" ){
         alertMsg = "所属组别不能为空";
         showMsg("alerts",failMsg(alertMsg));
         return;

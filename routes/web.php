@@ -18,7 +18,7 @@ Route::get('register', function () {
 });
 
 
-Route::group(['middleware'=>'checklogin'],function(){
+/*Route::group(['middleware'=>'checklogin'],function(){*/
     //管理员部分路由
     Route::get('manager', 'Manager@index');
     Route::post('delmanager', 'Manager@del');
@@ -52,7 +52,7 @@ Route::group(['middleware'=>'checklogin'],function(){
 
 
 
-});
+/*});*/
 
 
 

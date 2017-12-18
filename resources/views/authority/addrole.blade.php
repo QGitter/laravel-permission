@@ -39,6 +39,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading" style="margin:0px;padding:0px">
                                 <ul class="nav tab-menu nav-tabs" id="myTab" style="float: left">
+
                                     <?php if(!empty($menus)){?>
                                         <?php foreach ($menus as $menu){?>
                                             <li><a href="#<?php echo "menu_".$menu['id'];?>"><?php echo $menu['name'];?></a></li>

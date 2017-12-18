@@ -81,7 +81,6 @@
                                     <th>所属组别</th>
                                     <th>Email</th>
                                     <th>状态</th>
-                                    <th>最后登录</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
@@ -100,7 +99,7 @@
                                                 <?php echo !empty($user->status) && $user->status == 1 ? "正常" : "隐藏"  ; ?>
                                             </span>
                                         </td>
-                                        <td><?php echo date('Y-m-d H:i:s',$user->logintime);?></td>
+
                                         <td>
                                             {{ csrf_field() }}
 

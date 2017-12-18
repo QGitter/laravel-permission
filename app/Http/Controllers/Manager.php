@@ -21,7 +21,7 @@ class Manager extends Controller{
      */
     public function index(){
         $users = DB::table('admin')
-            ->select('admin.id','admin.username','admin.nickname','role.name','admin.email','admin.logintime','admin.status','role.pid')
+            ->select('admin.id','admin.username','admin.nickname','role.name','admin.email','admin.status','role.pid')
             ->leftJoin('admin_map_role', 'admin.id', '=', 'admin_map_role.uid')
             ->leftJoin('role', 'admin_map_role.roleid', '=', 'role.id')
             ->orderBy('admin.id','asc')
@@ -190,7 +190,6 @@ class Manager extends Controller{
                         'password' => sha1('123456'.$this->getSalt()),
                         'salt' => $this->getSalt(),
                         'email' => $request->input('email'),
-                        'token' => $request->input('username'),
                         'status' =>$request->input('status'),
                         'createtime'=>time(),
                         'updatetime'=>time()
