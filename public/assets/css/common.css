@@ -1,0 +1,44 @@
+.panel-body .btn{border-radius: 3px;font-size: 12px}
+
+.table tbody tr td .btn{border-radius: 2px;padding:2px 5px}
+.table thead tr th{padding: 8px 10px;font-size: 14px}
+.table tbody tr td{padding: 6px 10px;font-size: 14px;word-break: keep-all;font-size: 12px}
+
+.pagination{margin: 2px}
+.alert{padding:10px}
+.whitetext{border: none;background: none;
+    font-size:14px;
+}
+.textright{
+
+    width: 100px;
+    text-align: right;
+
+}
+.input-group-addon{
+    color: #555555;
+}
+.panel-heading .nav-tabs li.active > a{
+    color: #555555;
+    background: #fff;
+}
+.tab-content table tr td{vertical-align: middle;text-align: center}
+.tab-content table tr td.nobreak{word-break: normal}
+.tab-content table tr td input[type='checkbox']{margin-left: 10px}
+
+#chooseicon ul li {
+    width: 33px;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #ddd;
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.controls .alert{margin-bottom: 0px}
+.btn-sm{ margin-bottom: 10px;margin-right: 2px}
+.dir,.menubutton,.dirmenu{display: none}
+.hidetr{display: none}
