@@ -5,7 +5,7 @@ laravel5.4权限管理
 
 # 安装laravel-permission
 
-step1.  git clone https://github.com/QGitter/laravel-permission.git
+step1.  git clone https://github.com/QGitter/laravel-permission.git <br>
 step2.  cd  laravel-permission && composer install 
 step3.  cp .env.example .env
 step4.  在.env中配置数据库信息
